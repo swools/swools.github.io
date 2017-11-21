@@ -16,9 +16,14 @@ p {
 
 li {
   font-size: 22px;
+  list-style: none;
 }
 
 a, a:visited  {
   color: white;
   font-weight: bold;
+}
+
+#dawas {
+  width: 400px;
 }

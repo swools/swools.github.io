@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.container {
+    background: lightgrey;
+    text-align: center;
+    padding: 1px 10px 20px 10px;
+    margin: 0px auto;
+    width: 1000px;
+}
+
+h1 {
+    background: black;
+    color: white;
+    font-size: 15px;
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.container2 {
+    background: orange;
+    margin: 10px 20px;
+    padding: 10px 0;
+}
+
+.container2__purple {
+    color: purple;
+}
+
+.container2__green {
+    color: green;
+}
+
+.container2__yellow {
+    color: yellow;
+}
+
+p {
+    padding: 0;
+}

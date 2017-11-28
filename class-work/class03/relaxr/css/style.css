@@ -51,7 +51,7 @@ body {
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
+     background-size: cover;
 }
 
 
@@ -67,12 +67,28 @@ body {
 
 }
 
-header {
+.benefits {
+  width: 750px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
 
+.quote {
+  width: 750px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+header {
+  width: 750px;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 footer {
-
+  width: 750px;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 /******************************************

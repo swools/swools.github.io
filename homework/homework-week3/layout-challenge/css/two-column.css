@@ -1,0 +1,39 @@
+
+
+/* body {
+    height: 100vh;
+} */
+
+/* header, footer, main, section, aside {
+    height: 300px;
+} */
+
+header, footer {
+    height: 100px;
+}
+
+section, aside {
+    height: 300px;
+}
+
+header {
+    background: red;
+}
+
+section {
+    background: green;
+    width: 70%;
+}
+
+aside {
+    background: blue;
+    width: 30%;
+}
+
+footer {
+    background: yellow;
+}
+main {
+    display: flex;
+    
+}

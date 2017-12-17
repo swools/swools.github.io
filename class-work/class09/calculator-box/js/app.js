@@ -11,3 +11,73 @@
 // - .click()
 // - . text() or .html()
 // - .css()
+
+
+$(document).ready (function(){
+
+    
+
+    //add 10 to middle box
+    $('#a10').click(function(){
+        var out = $('#out').html();
+        
+        $('#out').html(parseInt(out) + 10);
+    })
+
+    //add 20 to middle box
+    $('#a20').click(function(){
+        var out = $('#out').html();
+        
+        $('#out').html(parseInt(out) + 20);
+    })
+
+    //add 30 to middle box
+    $('#a30').click(function(){
+        var out = $('#out').html();
+        
+        $('#out').html(parseInt(out) + 30);
+    })
+
+    //subtract 10 to middle box
+    $('#n10').click(function(){
+        var out = $('#out').html();
+        
+        $('#out').html(parseInt(out) - 10);
+    })
+
+    //subtract 20 to middle box
+    $('#n20').click(function(){
+        var out = $('#out').html();
+        
+        $('#out').html(parseInt(out) - 20);
+    })
+
+    //subtract 30 to middle box
+    $('#n30').click(function(){
+        var out = $('#out').html();
+        
+        $('#out').html(parseInt(out) - 30);
+    })
+
+    //change background color of middle box to red
+    $('#red').click(function(){
+        $('#out').css('background-color', 'red');
+    })
+
+    //change background color of middle box to blue
+    $('#blue').click(function(){
+        $('#out').css('background-color', 'blue');
+    })
+
+    //clear middle box to 0 and set background to white
+    $('#out').click(function(){
+        $('#out').css('background-color', 'white');
+        $('#out').html('0');
+    })
+})
+
+
+
+
+
+

@@ -1,7 +1,11 @@
 // 1. Use document.getElementById() and assign the .onclick event to #color-button
+
+//Browser Event
 document.querySelector('#color-button').onclick = changeColor;
 
 // 2. Write a function, named changeColor, that is called when #color-button is clicked
+
+//Function
 function changeColor(){
     var red = document.getElementById('red').value;
     var green = document.getElementById('green').value;

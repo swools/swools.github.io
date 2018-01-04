@@ -5,9 +5,15 @@
   <style>
     .container {
       display: grid;
-      grid-template-columns: 200px auto 200px;
-      grid-template-rows: 200px 200px;
+
+      /* setting widths as fractions */
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      /* grid-template-rows: 200px 200px; */
       grid-gap: 3px;
+      /* grid-template-columns: repeat(3, 1fr); */
+      /* grid-template-rows: repeat(2, 200px); */
+      /* shorthand to combine */
+      grid-template: repeat(2, 200px) / repeat(3, 1fr);
     }
   </style>
 </head>

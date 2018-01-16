@@ -1,0 +1,210 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background-color: rgba(245, 245, 245, .8);
+}
+
+.container {
+    display: grid;
+    /* text-align: center; */
+    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 6fr 5px .25fr;
+    grid-template-areas:
+        "j j j j j j j j j j j j"
+        "l l l l l l l l l l l l"
+        ". . . . . s s . . . . .";
+    grid-gap: 5px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+
+}
+
+header {
+    text-align: center;
+    background-color: rgba(245, 245, 245, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    /* opacity: .8; */
+    font-family: "Lobster", cursive;
+    
+}
+    
+.jumbotron {
+    grid-area: j;
+    background-image: url('assets/jumbotron.jpg');
+    background-size: cover;
+    position: relative;
+    /* height: 100vh; */
+    /* display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */   
+}
+
+.logo {
+    color: black ;
+    font-style: italic;
+    
+    margin-left: 20px;
+    width: 250px;
+    text-decoration: none;
+    
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.header-nav {
+    margin-right: 10px;
+}
+
+.line-break {
+    background: black;
+    grid-area: l;
+    height: 5px;
+}
+
+.scroll-arrow {
+    grid-area: s;
+    grid-column: 6 / 8;
+    text-align: center;
+    position: relative;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    
+    
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px;
+    grid-template-areas:
+        "p n e o";
+    grid-gap: 5px;
+    width: 100%;
+    margin-left: 25px;
+}
+
+.pets,
+.nutrition,
+.exercise,
+.oils {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 75px;
+    grid-template-areas:
+        "p" 
+        "t";
+    grid-area: p;
+    grid-column: 1 / 2;
+    align-items: center;
+    text-align: center;
+}
+
+.nutrition {
+    grid-area: n;
+}
+
+.exercise {
+    grid-area: e;
+}
+
+.oils {
+    grid-area: o;
+}
+
+.nutrition-blurb {
+    grid-area: t;
+    margin: 0;
+    max-width: 300px;
+}
+
+.nutrition-img{
+    grid-area: p;
+    width: 300px;
+    height: 250px;
+    max-width: 300px;
+}
+
+.pet-blurb {
+    grid-area: t;
+    margin: 0;
+    max-width: 300px;
+}
+
+.pet-img{
+    grid-area: p;
+    width: 300px;
+    height: 250px;
+    max-width: 300px;
+}
+
+
+.exercise-blurb {
+    grid-area: t;
+    margin: 0;
+    max-width: 300px;
+}
+
+.exercise-img{
+    grid-area: p;
+    width: 300px;
+    height: 250px;
+    max-width: 300px;
+}
+
+.oils-blurb {
+    grid-area: t;
+    margin: 0;
+    max-width: 300px;
+}
+
+.oils-img{
+    grid-area: p;
+    width: 300px;
+    height: 250px;
+    max-width: 300px;
+}
+/* make arrow indicating to scroll bounce */
+@keyframes bouncing {
+    0%   {bottom: 0;}
+    50%  {bottom: 5px;}
+    100% {bottom: 0;}
+}
+ 
+.arrow {
+    animation: bouncing 0.75s infinite ease-in-out;
+    bottom: 0;
+    /* display: block; */
+    /* left: 50%; */
+    margin-left: -14px;
+    position: absolute;
+}
+
+/* Need to figure out why container 2 doesn't contract like container 1 */
+
+.parallax::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}

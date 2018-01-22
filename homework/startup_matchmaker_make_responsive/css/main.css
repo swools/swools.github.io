@@ -176,13 +176,17 @@ footer {
 	}
 
 	header {
-		flex-direction: row-reverse;
-		margin-top: 20px;
 		display: block;
+	}
+
+	.header-nav {
+		margin-top: 20px;
+		justify-content: flex-start;
 	}
 
 	.header-nav__a {
 		padding-right: 20px;
+		padding-left: 0;
 	}
 }
 
@@ -192,18 +196,23 @@ footer {
 
 	}
 
-	.header-nav__a {
+	.header-nav {
 		display: block;
 	}
 
 	.banner {
-		align-items: center;
+		justify-content: center;
 	}
 
 	.tout {
-		display:block;
+		box-sizing: border-box;
 		width: 100%;
+		border: none;
 		
+	}
+
+	.touts {
+		display: block;
 	}
 }
 

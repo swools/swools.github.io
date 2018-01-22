@@ -169,6 +169,44 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1000px) and (min-width: 550px){
+	body {
+		width: 95%;
+		
+	}
+
+	header {
+		flex-direction: row-reverse;
+		margin-top: 20px;
+		display: block;
+	}
+
+	.header-nav__a {
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	body {
+		width: 100%;
+
+	}
+
+	.header-nav__a {
+		display: block;
+	}
+
+	.banner {
+		align-items: center;
+	}
+
+	.tout {
+		display:block;
+		width: 100%;
+		
+	}
+}
+
 /* Medium screens and smaller smaller - less than 1000px */
 	/* give body width of 95% */
 	/* have elements inside of header stack on top of eachother */

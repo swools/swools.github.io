@@ -20,6 +20,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 2px;
+    padding-top: 75px;
 
 }
 
@@ -32,6 +33,10 @@ header {
     height: 75px;
     /* opacity: .8; */
     font-family: "Lobster", cursive;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     
 }
     

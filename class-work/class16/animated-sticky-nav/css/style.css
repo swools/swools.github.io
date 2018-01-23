@@ -1,9 +1,21 @@
 .wrapper {
 	text-align: center;
+	padding-top: 75px;
 }
 
 header {
 	background: SeaGreen;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 75px;
+	transition: all 0.1s ease-in-out;
+}
+
+.small-nav {
+	background: tomato;
+	font-size: 40px;
 }
 
 img {

@@ -4,14 +4,14 @@
 
 body {
     margin: 0 auto;
-
+    font-family: "Raleway", sans-serif;
 }
 
 /* body wrapper */
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 500px 1fr;
+    grid-template-rows: 600px 1fr;
     height: 100vh;
     grid-gap: 10px;
     margin-top: 100px;
@@ -20,6 +20,7 @@ body {
 
 /* site-header */
 .main-header {
+    height: 100px;
     grid-column: 1 / -1;
     text-align: center;
     display: flex;
@@ -40,8 +41,12 @@ body {
     align-items: center;
 }
 
+.site-nav {
+    align-self: flex-start;
+}
+
 .jumbotron-img {
-    background-image: url("https://img00.deviantart.net/3f0d/i/2012/323/4/5/nature_high_resolution_image_by_danieljales-d5lhvku.jpg");
+    background-image: url("assets/josh-calabrese-527813.jpg");
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -56,10 +61,11 @@ body {
     /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 20px 400px;
+    grid-template-rows: 40px 400px;
     grid-auto-rows: 500px;
     grid-gap: 10px;
     padding: 10px;
+    margin-top: 50px;
 }
 
 .footer {
@@ -72,6 +78,7 @@ body {
 .card-section-title {
     /* border: 1px solid black; */
     margin: 0;
+    grid-column: span 6;
 }
 
 /* row of articles*/

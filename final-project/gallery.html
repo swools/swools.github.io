@@ -5,24 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="lightbox.css" rel="stylesheet">
     <title>Gallery</title>
 </head>
 
 <body>
 
     <header class="main-header">
+        <i class="fas fa-bars fa-lg"></i>
         <ul class="site-nav">
-            
-            <li><a href="about-me.html">About Me</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+
+            <li>
+                <a href="memory-game.html">Memory Game</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
         </ul>
-        <h2 class="logo">Wellness Full Circle</h2>
+        <h2 class="logo">
+            <a href="index.html">Wellness Full Circle</a>
+        </h2>
     </header>
+    <div class="mobile-nav">
+        <ul>
+            <a class="mobile-link" href="memory-game.html">
+                <li>Memory Game</li>
+            </a>
+            <a class="mobile-link" href="gallery.html">
+                <li>Gallery</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="img-grid">
+        <a href="assets/remy-lg.jpg" class="img" data-lightbox="remy">
+            <img src="assets/remy.jpg" alt="">
+        </a>
+        <a href="assets/exercise-lg.jpg" class="img" data-lightbox="exercise">
+            <img src="assets/exercise.jpg" alt="">
+        </a>
+        <a href="assets/road-lg.jpg" class="img" data-lightbox="road">
+            <img src="assets/road.jpg" alt="">
+        </a>
+        <a href="assets/essential_oils-lg.jpg" class="img" class="img" data-lightbox="essential_oils-lg">
+            <img src="assets/essential_oils.jpg" alt="">
+        </a>
+        <a href="assets/brittany-lg.jpg" class="img " data-lightbox="brittany">
+            <img src="assets/brittany.jpg" alt="">
+        </a>
+        <a href="assets/lake.jpg" class="img" data-lightbox="lake">
+            <img src="assets/lake.jpg" alt="">
+        </a>
+        <a href="assets/remy2-lg.jpg" class="img " data-lightbox="remy2">
+            <img src="assets/remy2.jpg" alt="">
+        </a>
+        <a href="assets/road2-lg.jpg" class="img " data-lightbox="road2">
+            <img src="assets/road2.jpg" alt="">
+        </a>
 
 
 
+
+
+
+
+    </div>
+
+
+
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="fontawesome-all.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
+
+</html>

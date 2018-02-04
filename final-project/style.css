@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 /* body wrapper */
@@ -17,8 +17,24 @@ body {
 .site-nav li a {
     text-decoration: none;
     color: grey;
+}
+
+.site-nav li a:visited{
+    text-decoration: none;
+    color: grey; 
+}
+
+.site-nav li a:hover
+ {
+    color: black;
+    -webkit-transition: width, .3s, ease-in-out;
+    transition: width, .3s, ease-in-out;
+    border-top: 3px solid black;
+    padding-top: 5px;
     
 }
+
+
 
 .site-nav li {
     list-style: none;
@@ -34,7 +50,6 @@ body {
     display: grid;
     grid-template-columns:repeat(12, 1fr);
     align-items: center;
-    /* box-shadow: 1px 1px 1px 2px #0000009f; */
     position: fixed;
     top: 0;
     left: 0;
@@ -43,7 +58,17 @@ body {
 }
 
 .logo {
-    grid-column: 6 / 8;
+    grid-column: 4 / 10;
+    font-size: 28px;
+}
+
+.logo:hover {
+    transform: scale(1.01);
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
 }
 
 .jumbotron {
@@ -54,12 +79,23 @@ body {
 }
 
 .site-nav {
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
+    padding-left: 0;
     
 }
 
 .jumbotron-img {
-    background-image: url("assets/josh-calabrese-527813.jpg");
+    background-image: url("assets/IMG_0922.jpg");
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron-img2 {
+    background-image: url("assets/remy-beach.jpg");
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -73,7 +109,7 @@ body {
     grid-column: 3 / 11;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px 400px;
+    grid-template-rows: 40px 400px 40px 400px;
     grid-auto-rows: 500px;
     grid-gap: 10px;
     padding: 10px;
@@ -102,10 +138,25 @@ body {
     grid-gap: 30px;
 }
 
-article {
+.cards2 {
+    
+        grid-row: 4 / 5;
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 30px;
+    }
+
+.article {
     display: flex;
     flex-direction: column;
     box-shadow:2px 5px 2px 2px #ccc;
+    text-decoration: none;
+    color: black;
+}
+
+.article:hover {
+    transform: scale(1.05);
 }
 
 
@@ -118,11 +169,6 @@ article {
     grid-column: 7 / 13
 }
 
-/* .article-image1,
-.article-image2,
-.article-title {
-    height: 100%;
-} */
 
 .article-title {
     height: 25%;
@@ -135,15 +181,34 @@ article {
 .article-image1 {
     background-image: url("assets/remy.jpg");
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position-y: -60px;
 }
 
 .article-image2 {
-    background-image: url("assets/exercise.jpg");
+    background-image: url("assets/road2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -200px;
+    
+}
+
+.article-image3 {
+    background-image: url("assets/road.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-y: -200px; */
+    
+}
+
+.article-image4 {
+    background-image: url("assets/sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
 }
 
 .article-title {
@@ -152,12 +217,13 @@ article {
 
 .title {
     margin: 20px 0 0 20px;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: bold;
 }
 
 .hover {
     opacity: 0.5;
+    transition-duration: 0.4s;
 }
 
 .card-section-title {
@@ -166,7 +232,161 @@ article {
 
 
 
+/* ideas
+
+Use font awesome to get a little icon for each article type and add it to each article card */
+
+
+/* gallery */
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 335px 335px;
+    grid-gap: 20px;
+    max-width: 1370px;
+    margin: 60px auto;
+    padding-top: 20px;
+    align-items: stretch;
+    
+
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.img-grid img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.img-grid a:hover {
+    transform: scale(1.02);
+}
+
+.img {
+    backface-visibility: hidden;
+}
+
+.img.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+  }
+
+  .animation {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+/* Article Pages */
+
+.article-body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 1fr;
+    grid-column: 5 / 9;
+    margin-bottom: 50px;
+    grid-gap: 20px;
+}
+
+.article-body h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.article-body section {
+    grid-column: 1 / -1 ;
+}
+
+
+/* Memory Game */
+.card {
+    width: 200px;
+    height: 200px;
+}
+
+#memory-game {
+    display: grid;
+    margin-top: 100px;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+.mobile-nav {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile-nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 
 
 
+@media (max-width: 900px){
+   .main{
+       grid-template-columns: 1fr;
+       grid-template-rows: 40px 1fr 40px 1fr;
+    }
+
+    .cards,
+    .cards2 {
+        grid-template-rows: 400px 400px;
+    }
+
+    .article {
+        grid-column: 1 / -1;
+    }
+
+    .site-nav {
+        display: none;   
+    }
+
+    .fa-bars {
+        display: block;
+        padding-left: 20px;
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    .main-header {
+        grid-template-columns: 40px 1fr 40px;
+    }
+
+    .mobile-link {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        background: #DCDCDC;
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

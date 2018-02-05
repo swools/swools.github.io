@@ -14,6 +14,7 @@ body {
     
 }
 
+/* Navigation */
 .site-nav li a {
     text-decoration: none;
     color: grey;
@@ -42,7 +43,15 @@ body {
     margin: 0 10px;
 }
 
+
 /* site-header */
+
+.site-nav {
+    grid-column: 1 / 4;
+    padding-left: 0;
+    
+}
+
 .main-header {
     height: 80px;
     grid-column: 1 / -1;
@@ -78,11 +87,7 @@ body {
     align-items: center;
 }
 
-.site-nav {
-    grid-column: 1 / 4;
-    padding-left: 0;
-    
-}
+
 
 .jumbotron-img {
     background-image: url("assets/IMG_0922.jpg");
@@ -231,36 +236,30 @@ body {
 }
 
 
-
-/* ideas
-
-Use font awesome to get a little icon for each article type and add it to each article card */
-
-
 /* gallery */
+
+/* Grid for image gallery */
 
 .img-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 335px 335px;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     max-width: 1370px;
-    margin: 60px auto;
+    margin: 60px 20px;
     padding-top: 20px;
     align-items: stretch;
-    
-
 }
 
 .img {
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
     
 }
 
 .img-grid img {
     max-width: 100%;
-    max-height: 100%;
+    /* max-height: 100%; */
     
 }
 
@@ -388,5 +387,13 @@ Use font awesome to get a little icon for each article type and add it to each a
         justify-content: center;
         align-items: center;
     }
+
+@media (max-width: 600px){
+    .img-grid {
+        grid-template-columns: 280px;
+    }
+}
+
+
 
 }

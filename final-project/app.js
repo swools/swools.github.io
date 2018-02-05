@@ -1,3 +1,5 @@
+$(".mobile-nav").hide();
+
 $(document).ready(function(){
     $(".article").hover(function(){
         $(this).toggleClass("hover");
@@ -12,7 +14,7 @@ $(function(){
 
 //Hamburger menu
 
-$(".mobile-nav").hide();
+
 
 
 

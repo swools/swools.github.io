@@ -38,7 +38,7 @@ $(window).resize(function(){
 });
 
 $('.fa-bars').click(function(){
-    $('.mobile-nav').slideToggle();
+    $('.mobile-nav').slideToggle(300, "swing");
 });
     
     

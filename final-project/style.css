@@ -329,9 +329,10 @@ body {
 .mobile-nav {
     width: 100%;
     height: auto;
-    margin-top: 80px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    position: fixed;
 }
 
 .mobile-nav ul {
@@ -380,10 +381,9 @@ body {
         text-decoration: none;
         list-style: none;
         color: black;
-        background: #DCDCDC;
-        border: 1px solid black;
+        background: #FFFFFF;
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
